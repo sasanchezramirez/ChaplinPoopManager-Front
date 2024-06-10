@@ -1,0 +1,66 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+    padding-bottom: 1%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    .logo {
+        width:  40px;
+        height: 40px;
+    }
+
+    span {
+        cursor: pointer;
+
+        &:hover {
+            font-size: 2em;
+        }
+    } 
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    img {
+        width: 60%;
+        height: 50%;
+        border-radius: 50%;
+    }
+
+    .pet-name {
+        font-size: 2em;
+        padding-top: 3%;
+    }
+
+    .analytics-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 20%;
+        padding-bottom: 1%;
+        width: 100%;
+
+
+        .times-pooping {
+            display: flex;
+            flex-direction: column;
+            padding: 3%;
+            padding-bottom: 1%;
+
+            .period-pooping {
+                display: flex;
+                flex-direction: row ;
+            }
+        }
+    }
+}
+
+
