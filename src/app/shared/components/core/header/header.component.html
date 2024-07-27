@@ -1,8 +1,16 @@
 <header class="header-container">
-    <div class = "pet-image">
-        <img src="../../../assets/images/chaplin.png" alt="Pet">
+    <div class = "pet-container">
+        <div class = "pet-image">
+            <span class="material-icons-sharp">
+                account_circle
+                </span>
+        </div>
+        <div class = "pet-data">
+            <p class="pet-name">{{ pet.name}} </p>
+            <p class="pet-age"> 4 años</p>
+        </div>
+
     </div>
-    <h1>Welcome {{ pet.name}} </h1>
     <div class = "logout button">
         <i class="material-icons-sharp">logout</i>
     </div>
