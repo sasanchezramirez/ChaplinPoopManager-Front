@@ -2,27 +2,46 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
+    width: 100%;
+
 }
 
 .poops-times-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    height: auto;
+
+    width: 80%;
+    margin-top: 2rem;
+
+}
+.date {
+    flex: 1;
+    margin-left: 10%;
+    white-space: normal; /* Permitir que el texto se ajuste en varias líneas */
+    word-wrap: break-word;
+    word-break: break-word;
+
+    font-size: 2.5rem;
+    height: fit-content;
+    padding: 2rem;
+    justify-content: space-between;
 }
 
 .poops-times {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary-color);
-    color: var(--white);
-    height: 50vh;
-    width: 50vw;
-    border-radius: 10px;
+    margin-right: 10%;
+}
+
+.number-poops {
+    font-size: 2rem;
+    margin: 0;
+
 }
 
 
