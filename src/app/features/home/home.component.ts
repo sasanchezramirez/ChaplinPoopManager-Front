@@ -10,4 +10,7 @@ export class HomeComponent {
     name: 'Chaplin'
   }
 
+  public todayVisits = '5'
+  public todayDate = 'Noviembre 16'
+
 }

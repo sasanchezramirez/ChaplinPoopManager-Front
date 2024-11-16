@@ -1,0 +1,52 @@
+@import '../../../../assets/styles/variables';
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background-color: $color-bg-secondary;
+  border: 1px solid $color-border;
+  border-radius: $border-radius-large;
+  padding: $spacing-medium;
+  height: 8rem; // Ajusta el alto de la tarjeta
+  width: 100%;
+  box-shadow: $box-shadow-large;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-icon {
+    position: absolute;
+    top: $spacing-small;
+    right: $spacing-small;
+    font-size: 1.5rem;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    .card-title {
+      font-size: $font-size-small;
+      color: $color-text-secondary;
+      margin: 0;
+    }
+
+    .card-value {
+      font-size: $font-size-title;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .card-subtitle {
+      font-size: $font-size-small;
+      color: $color-text-secondary;
+    }
+  }
+}
