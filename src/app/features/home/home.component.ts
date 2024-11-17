@@ -18,5 +18,39 @@ export class HomeComponent {
   }
 
 
+  public onChartRefresh() {
+    console.log('Refreshing chart data...');
+  }
+
+  heatmapData: any[] = [
+    {
+      name: 'Monday',
+      series: Array.from({ length: 24 }, (_, i) => ({ name: `${i}:00`, value: Math.floor(Math.random() * 10) }))
+    },
+    {
+      name: 'Tuesday',
+      series: Array.from({ length: 24 }, (_, i) => ({ name: `${i}:00`, value: Math.floor(Math.random() * 10) }))
+    },
+    {
+      name: 'Wednesday',
+      series: Array.from({ length: 24 }, (_, i) => ({ name: `${i}:00`, value: Math.floor(Math.random() * 10) }))
+    },
+    {
+      name: 'Thursday',
+      series: Array.from({ length: 24 }, (_, i) => ({ name: `${i}:00`, value: Math.floor(Math.random() * 10) }))
+    },
+    {
+      name: 'Friday',
+      series: Array.from({ length: 24 }, (_, i) => ({ name: `${i}:00`, value: Math.floor(Math.random() * 10) }))
+    },
+    {
+      name: 'Saturday',
+      series: Array.from({ length: 24 }, (_, i) => ({ name: `${i}:00`, value: Math.floor(Math.random() * 10) }))
+    },
+    {
+      name: 'Sunday',
+      series: Array.from({ length: 24 }, (_, i) => ({ name: `${i}:00`, value: Math.floor(Math.random() * 10) }))
+    },
+  ];
 
 }

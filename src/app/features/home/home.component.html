@@ -28,12 +28,14 @@
     </app-card>
   </div>
   <div class="container">
-    <app-card
-      title=""
-      [subtitle]="todayDate"
-      [value]="todayVisits"
-      class="poops-times-container">
-    </app-card>
+    <app-time-chart
+      class="chart-container"
+      title="Visits by Hour"
+      subtitle="Data collected on 16/11/2024"
+      icon="bar_chart"
+      [buttonAction]="onChartRefresh">
+      <app-heatmap [data]="heatmapData"></app-heatmap>
+    </app-time-chart>
   </div>
 </div>
 

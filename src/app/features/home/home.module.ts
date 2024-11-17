@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { CardComponent } from 'src/app/shared/components/card/card.component';
-
+import { TimeChartComponent } from 'src/app/shared/components/time-chart/time-chart.component';
+import { HeatmapComponent } from 'src/app/shared/components/heatmap/heatmap.component';
 
 
 @NgModule({
@@ -11,7 +12,9 @@ import { CardComponent } from 'src/app/shared/components/card/card.component';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    CardComponent
+    CardComponent,
+    TimeChartComponent,
+    HeatmapComponent
     ]
 })
 export class HomeModule { }

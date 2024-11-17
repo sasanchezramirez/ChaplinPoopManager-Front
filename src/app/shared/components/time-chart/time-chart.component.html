@@ -1,0 +1,22 @@
+<div class="card-container">
+  <div class="card-header">
+    <p class="card-title">{{ title }}</p>
+    <div class="card-icon">
+      <button
+        *ngIf="buttonAction"
+        class="icon-button"
+        (click)="buttonAction()"
+        aria-label="Action Button">
+        <span class="material-icons-sharp">{{ icon }}</span>
+      </button>
+      <span *ngIf="!buttonAction" class="material-icons-sharp">{{ icon }}</span>
+    </div>
+  </div>
+
+  <!-- Contenido (Gráfico o Mapa de Calor) -->
+  <div class="card-chart">
+    <ng-content></ng-content>
+  </div>
+
+  <p class="card-subtitle" *ngIf="subtitle">{{ subtitle }}</p>
+</div>
