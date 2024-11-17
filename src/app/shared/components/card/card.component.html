@@ -1,10 +1,19 @@
 <div class="card-container">
   <div class="card-icon">
-
+    <button
+      *ngIf="buttonAction"
+      class="icon-button"
+      (click)="buttonAction()"
+      aria-label="Action Button">
+      <span class="material-icons-sharp">{{ icon }}</span>
+    </button>
+    <span *ngIf="!buttonAction" class="material-icons-sharp">{{ icon }}</span>
+    <p class="icon-subtitle" *ngIf="iconSubtitle">{{ iconSubtitle }}</p>
   </div>
+
   <div class="card-content">
     <p class="card-title">{{ title }}</p>
-    <p class="card-value" >{{ value }}</p>
+    <p class="card-value">{{ value }}</p>
     <p class="card-subtitle" *ngIf="subtitle">{{ subtitle }}</p>
   </div>
 </div>

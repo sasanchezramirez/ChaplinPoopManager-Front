@@ -1,13 +1,40 @@
 
-
-<div class="container">
-  <app-card
-    title="Visits Today"
-    [subtitle]="todayDate"
-    [value]="todayVisits"
-    class="poops-times-container">
-  </app-card>
-
+<div class="dashboard">
+  <div class="container">
+    <app-card
+      title="Visits Today"
+      [subtitle]="todayDate"
+      [value]="todayVisits"
+      class="poops-times-container">
+    </app-card>
+     <app-card
+      title="Daily media"
+      subtitle="Last 7 days"
+      [value]="dailyVisits"
+      class="poops-times-container">
+    </app-card>
+  </div>
+  <div class="container">
+    <app-card
+      title="Poops since last clean"
+      [subtitle]="dateLastClean"
+      [value]="poopsSinceLastClean"
+      class="poops-times-container"
+      [buttonAction]="newClean"
+      icon="cleaning_services"
+      iconSubtitle="New Clean">
+    </app-card>
+  </div>
+  <div class="container">
+    <app-card
+      title=""
+      [subtitle]="todayDate"
+      [value]="todayVisits"
+      class="poops-times-container">
+    </app-card>
+  </div>
 </div>
+
+
 
 

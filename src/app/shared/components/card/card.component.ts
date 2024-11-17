@@ -8,9 +8,11 @@ import { CommonModule } from '@angular/common';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-  @Input() title: string = ''; // Título de la tarjeta
-  @Input() subtitle: string = ''; // Subtítulo opcional
-  @Input() content: string | null = null; // Contenido dinámico
-  @Input() icon: string | null = null; // Icono opcional
+  @Input() title: string = '';
+  @Input() subtitle: string = '';
+  @Input() content: string | null = null;
+  @Input() icon: string | null = null;
   @Input() value: string = '';
+  @Input() buttonAction: () => void = () => {}
+  @Input() iconSubtitle: string | null = null;
 }
