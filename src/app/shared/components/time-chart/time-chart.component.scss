@@ -53,6 +53,7 @@
     height: 100%; /* Ocupa el espacio completo */
     overflow: hidden; /* Evita desbordamientos */
     position: relative;
+    color: $color-text-main;
 
     ngx-charts-heat-map {
       max-width: 100%; /* Asegura que el heatmap no exceda el ancho del contenedor */

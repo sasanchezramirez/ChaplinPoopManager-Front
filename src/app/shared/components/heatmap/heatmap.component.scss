@@ -1,4 +1,14 @@
+@import '../../../../assets/styles/variables';
+
 :host {
   display: block;
   width: 100%;
 }
+:host ::ng-deep ngx-charts-heat-map text {
+  fill: $color-text-secondary;
+  font-size: $font-size-small;
+  font-weight: $font-weight-medium;
+}
+
+
+
